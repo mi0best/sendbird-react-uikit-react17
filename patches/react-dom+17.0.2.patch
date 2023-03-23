@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-dom/package.json b/node_modules/react-dom/package.json
+index c23d7cd..ca92a79 100644
+--- a/node_modules/react-dom/package.json
++++ b/node_modules/react-dom/package.json
+@@ -3,6 +3,11 @@
+   "version": "17.0.2",
+   "description": "React package for working with the DOM.",
+   "main": "index.js",
++  "exports": {
++    ".": "./index.js",
++    "./server": "./server.browser.js",
++    "./package.json": "./package.json"
++  },
+   "repository": {
+     "type": "git",
+     "url": "https://github.com/facebook/react.git",
